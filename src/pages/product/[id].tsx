@@ -12,6 +12,7 @@ import {
   ProductDetails,
 } from '@/styles/pages/product'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 interface ProductProps {
   product: {
@@ -27,6 +28,7 @@ interface ProductProps {
 export default function Product({ product }: ProductProps) {
   const [isCreatingCheckoutSession, setIsCreatingCheckoutSession] =
     useState(false)
+  const { isFallback } = useRouter()
 
   async function handleBuyProduct() {
     try {
@@ -44,6 +46,10 @@ export default function Product({ product }: ProductProps) {
 
       alert('Falha ao redirecionar ao checkout!')
     }
+  }
+
+  if (isFallback) {
+    return <p>Carregando...</p>
   }
 
   return (

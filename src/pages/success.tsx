@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { ImageContainer, SuccessContainer } from '@/styles/pages/success'
-import React from 'react'
 import { GetServerSideProps } from 'next'
 import { stripe } from '@/lib/stripe'
 import Stripe from 'stripe'

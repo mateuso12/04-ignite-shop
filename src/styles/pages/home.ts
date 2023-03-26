@@ -28,7 +28,7 @@ export const Product = styled('div', {
     bottom: '0.25rem',
     left: '0.25rem',
     right: '0.25rem',
-    padding: '2rem',
+    padding: '1.25rem',
 
     borderRadius: 6,
 
@@ -36,20 +36,44 @@ export const Product = styled('div', {
     alignItems: 'center',
     justifyContent: 'space-between',
 
-    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    backgroundColor: 'rgba(32, 32, 36, 0.9)',
 
     transform: 'translateY(110%)',
     opacity: 0,
     transition: 'all 0.2s ease-in-out',
 
-    strong: {
+    p: {
       fontSize: '$lg',
       color: '$gray100',
+      lineHeight: '32px',
     },
 
     span: {
-      fontHeight: 'bold',
+      fontWeight: '700',
+      fontSize: '$xl',
       color: '$green300',
+      lineHeight: '33.6px',
+    },
+
+    div: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 4,
+    },
+
+    button: {
+      padding: '12px',
+      borderRadius: '6px',
+      border: 'none',
+      background: '$green300',
+      color: '$white',
+
+      cursor: 'pointer',
+      transition: 'all 0.2s ease-in-out',
+
+      '&:hover': {
+        background: '$green500',
+      },
     },
   },
 

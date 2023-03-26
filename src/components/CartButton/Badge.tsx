@@ -16,7 +16,7 @@ const BadgeStyled = styled('span', {
   color: 'white',
   display: 'flex',
   fontSize: '0.875rem',
-  padding: '4.5px',
+  padding: '4px 6px',
 })
 
 export const Badge = ({ count }: BadgeProps) => {

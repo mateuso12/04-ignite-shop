@@ -1,4 +1,3 @@
-// ButtonWithBadge.tsx
 import { styled } from '@/styles'
 import { Handbag } from 'phosphor-react'
 import { Badge } from './Badge'
